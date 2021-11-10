@@ -1,0 +1,16 @@
+{% extends 'main/index.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<h1>Main Teachers</h1>
+    {%for el in teachers_list%}
+        <div class="alert alert-warning mt-2">
+            <h3>{{el.name}}</h3>
+            <p>{{el.surname}}</p>
+        </div>
+    {%endfor%}
+{% endblock %}
+

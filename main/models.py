@@ -25,7 +25,7 @@ class Student(models.Model):
 
 class Teacher(models.Model):
     name = models.CharField('Name', max_length=64)
-    surname = models.CharField('SurName' ,max_length=64)
+    surname = models.CharField('SurName', max_length=64)
     faculty = models.CharField(max_length=64)
 
     def __str__(self):
